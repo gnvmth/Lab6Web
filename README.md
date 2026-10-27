@@ -31,8 +31,6 @@ Lab6Web/
 │   ├── style.css
 │   └── script.js
 ├── screenshots/          # Bukti hasil (tangkapan layar)
-│   └── kode/             # Tangkapan layar potongan kode
-├── Laporan_Praktikum6_DOM_Event.docx
 └── README.md
 ```
 
