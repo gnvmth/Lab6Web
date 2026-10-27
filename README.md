@@ -114,14 +114,3 @@ Tampilan responsif memakai media query `max-width: 480px` sehingga tombol tersus
 3. **Event `change` pada dropdown sesi:** `sesiEl.addEventListener("change", ...)` menampilkan sesi terpilih pada ringkasan.
 4. **Sembunyikan/tampilkan paragraf:** `classList.toggle("sembunyi")` dengan aturan `.sembunyi { display: none; }`.
 5. **Script tanpa `defer` di `<head>`:** muncul error `Cannot set properties of null (setting 'textContent')` karena script berjalan sebelum HTML diparsing, sehingga `getElementById()` mengembalikan `null`. Solusi: pakai `defer` atau letakkan `<script>` sebelum `</body>`.
-
-## Laporan Lengkap
-
-Penjelasan lebih rinci, potongan kode, pengujian, dan jawaban pertanyaan evaluasi tersedia di
-[`Laporan_Praktikum6_DOM_Event.docx`](Laporan_Praktikum6_DOM_Event.docx).
-
-## Referensi
-
-- MDN Web Docs. *Introduction to the DOM*. https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-- MDN Web Docs. *Event reference*. https://developer.mozilla.org/en-US/docs/Web/Events
-- MDN Web Docs. *Client-side form validation*. https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
