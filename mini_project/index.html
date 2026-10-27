@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pendaftaran Workshop</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <main class="kartu">
+  <h1>Pendaftaran Workshop Web</h1>
+  <p id="infoWorkshop">Isi data berikut untuk mengikuti workshop.</p>
+  <button id="tombolInfo" type="button" class="link">Sembunyikan info</button>
+
+  <form id="formWorkshop" novalidate>
+   <label for="nama">Nama lengkap</label>
+   <input id="nama" type="text" maxlength="40">
+   <span class="error" id="errNama"></span>
+
+   <label for="email">Email</label>
+   <input id="email" type="email">
+   <span class="error" id="errEmail"></span>
+
+   <label for="sesi">Pilihan sesi</label>
+   <select id="sesi">
+    <option value="">-- Pilih sesi --</option>
+    <option value="HTML &amp; CSS Dasar">HTML &amp; CSS Dasar</option>
+    <option value="JavaScript DOM">JavaScript DOM</option>
+    <option value="Web Responsif">Web Responsif</option>
+   </select>
+   <span class="error" id="errSesi"></span>
+
+   <label for="catatan">Catatan (maks. 100 karakter)</label>
+   <textarea id="catatan" maxlength="100" rows="3"></textarea>
+   <small>Jumlah karakter: <span id="hitung">0</span>/100</small>
+
+   <div class="aksi">
+    <button type="submit">Daftar</button>
+    <button type="button" id="tombolReset" class="sekunder">Reset</button>
+   </div>
+  </form>
+
+  <p id="pesanStatus" aria-live="polite"></p>
+
+  <section class="ringkasan">
+   <h2>Ringkasan Input</h2>
+   <p>Nama: <strong id="rNama">-</strong></p>
+   <p>Email: <strong id="rEmail">-</strong></p>
+   <p>Sesi: <strong id="rSesi">-</strong></p>
+  </section>
+ </main>
+</body>
+</html>

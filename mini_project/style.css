@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f2f5fa; margin: 0; padding: 16px; color: #222; }
+.kartu { max-width: 480px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+h1 { font-size: 1.4rem; color: #173f75; margin-top: 0; }
+h2 { font-size: 1.05rem; color: #173f75; }
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, select, textarea { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #aab4c4; border-radius: 6px; font: inherit; }
+input.invalid, select.invalid { border-color: #c62828; }
+.error { color: #c62828; font-size: .85rem; display: block; min-height: 1em; }
+.aksi { display: flex; gap: 8px; margin-top: 16px; }
+button { padding: 10px 16px; border: 0; border-radius: 6px; background: #3478c8; color: #fff; cursor: pointer; font: inherit; }
+button.sekunder { background: #687386; }
+button.link { background: none; color: #3478c8; padding: 0; text-decoration: underline; }
+.sukses { color: #1b7a3a; font-weight: bold; }
+.gagal { color: #c62828; font-weight: bold; }
+.ringkasan { background: #e6f1ff; border-left: 4px solid #3478c8; padding: 4px 14px; margin-top: 16px; border-radius: 6px; }
+.ringkasan p { margin: 6px 0; }
+.sembunyi { display: none; }
+@media (max-width: 480px) { .aksi { flex-direction: column; } }
